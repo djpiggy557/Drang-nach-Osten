@@ -1,0 +1,17 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_gottfried_feder"
+		texturefile = "gfx/interface/ideas/idea_gottfried_feder.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_kuno_kamphausen"
+		texturefile = "gfx/interface/ideas/idea_kuno_kamphausen.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_baldur_schirach"
+		texturefile = "gfx/interface/ideas/idea_baldur_schirach.dds"
+	}
+}
