@@ -1,0 +1,672 @@
+focus_tree = {
+	id = GER
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	#Focus for Return to the Rhine
+	focus = {
+		id = GER_return_to_the_rhine
+		icon = GFX_goal_generic_propaganda
+		x = 30
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			51 = {set_demilitarized_zone= no}
+42 = {set_demilitarized_zone= no}
+		}
+	}
+
+	#Focus for Naumburg's Heimatstil
+	focus = {
+		id = GER_naumburgs_heimatstil
+		icon = GFX_goal_unknown
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_kick_out_the_opposition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Danzig Pact
+	focus = {
+		id = GER_danzig_pact
+		icon = GFX_focus_generic_polish_deal
+		x = 28
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_frances_reason_to_join 
+		}
+		prerequisite = { 
+			focus = GER_cooperate_with_the_finns 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = rosenbergreich.15 
+}
+		}
+	}
+
+	#Focus for Anti Soviet Alliance
+	focus = {
+		id = GER_anti_soviet_alliance
+		icon = GFX_goal_unknown
+		x = 31
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_danzig_pact 
+		}
+		prerequisite = { 
+			focus = GER_yugoslav_question 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Romanian Appeasement
+	focus = {
+		id = GER_romanian_appeasement
+		icon = GFX_goal_generic_scientific_exchange
+		x = 36
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_sudetenland_question }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = rosenbergreich.14 
+}
+		}
+	}
+
+	#Focus for Yugoslav Question
+	focus = {
+		id = GER_yugoslav_question
+		icon = GFX_goal_unknown
+		x = 34
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_hungarian_appeasement 
+		}
+		prerequisite = { 
+			focus = GER_bulgarian_appeasement 
+		}
+		prerequisite = { 
+			focus = GER_romanian_appeasement 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hungarian Appeasement
+	focus = {
+		id = GER_hungarian_appeasement
+		icon = GFX_goal_generic_dangerous_deal
+		x = 32
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_sudetenland_question }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = rosenbergreich.12 
+}
+		}
+	}
+
+	#Focus for Anti Bolshevist Pact
+	focus = {
+		id = GER_anti_bolshevist_pact
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 26
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_return_to_the_rhine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			EST = {country_event= {
+days = 1 
+id = rosenbergreich.8 
+}
+}
+LAT = {country_event= {
+days = 1 
+id = rosenbergreich.8 
+}
+}
+LIT = {country_event= {
+days = 1 
+id = rosenbergreich.8 
+}
+}
+POL = {country_event= {
+days = 1 
+id = rosenbergreich.8 
+}
+}
+HUN = {country_event= {
+days = 1 
+id = rosenbergreich.8 
+}
+}
+ROM = {country_event= {
+days = 1 
+id = rosenbergreich.8 
+}
+}
+BUL = {country_event= {
+days = 1 
+id = rosenbergreich.8 
+}
+}
+PER = {country_event= {
+days = 1 
+id = rosenbergreich.8 
+}
+}
+AFG = {country_event= {
+days = 1 
+id = rosenbergreich.8 
+}
+}
+TUR = {country_event= {
+days = 1 
+id = rosenbergreich.8 
+}
+}
+		}
+	}
+
+	#Focus for Austrian Question
+	focus = {
+		id = GER_austrian_question
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 34
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_return_to_the_rhine }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			AUS = {country_event= {
+days = 1 
+id = rosenbergreich.9 
+}
+}
+		}
+	}
+
+	#Focus for Befriend the Italians
+	focus = {
+		id = GER_befriend_the_italians
+		icon = GFX_focus_befriend_italy
+		x = 29
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_return_to_the_rhine }
+		mutually_exclusive = { focus = GER_befriend_the_english }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_opinion_modifier= { 
+target = ITA 
+modifier = large_increase 
+}
+		}
+	}
+
+	#Focus for Golden International
+	focus = {
+		id = GER_golden_international
+		icon = GFX_goal_unknown
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_naumburgs_heimatstil }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for KdF Expansion
+	focus = {
+		id = GER_kdf_expansion
+		icon = GFX_goal_unknown
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_kick_out_the_opposition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for France's Reason to Join
+	focus = {
+		id = GER_frances_reason_to_join
+		icon = GFX_goal_unknown
+		x = 28
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_friends_with_sanjurjo }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Kick out the Opposition
+	focus = {
+		id = GER_kick_out_the_opposition
+		icon = GFX_goal_unknown
+		x = 16
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_25_point_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cooperate with the Finns
+	focus = {
+		id = GER_cooperate_with_the_finns
+		icon = GFX_goal_unknown
+		x = 25
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_cooperate_with_the_balts }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 25 Point Plan
+	focus = {
+		id = GER_25_point_plan
+		icon = GFX_goal_unknown
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for U-Boat Program
+	focus = {
+		id = GER_uboat_program
+		icon = GFX_goal_unknown
+		x = 19
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_kriegsmarine }
+		mutually_exclusive = { focus = GER_carrier_project }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Baltic Fleet
+	focus = {
+		id = GER_baltic_fleet
+		icon = GFX_goal_unknown
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_kriegsmarine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bomber Initiative
+	focus = {
+		id = GER_bomber_initiative
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_air_innovations }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for German Dogfighters
+	focus = {
+		id = GER_german_dogfighters
+		icon = GFX_goal_unknown
+		x = 14
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_air_innovations }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Air Innovations
+	focus = {
+		id = GER_air_innovations
+		icon = GFX_goal_unknown
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_luftwaffe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Kriegsmarine
+	focus = {
+		id = GER_kriegsmarine
+		icon = GFX_goal_unknown
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Luftwaffe
+	focus = {
+		id = GER_luftwaffe
+		icon = GFX_goal_unknown
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ascension of the NSDAP
+	focus = {
+		id = GER_ascension_of_the_nsdap
+		icon = GFX_goal_unknown
+		x = 24
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_night_of_the_long_knives }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = rosenbergreich.7
+}
+		}
+	}
+
+	#Focus for a
+	focus = {
+		id = GER_a
+		icon = GFX_goal_unknown
+		x = 41
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fuhrer Rosenberg
+	focus = {
+		id = GER_fuhrer_rosenberg
+		icon = GFX_goal_unknown
+		x = 24
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_ascension_of_the_nsdap }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Beer Hall Putsch
+	focus = {
+		id = GER_beer_hall_putsch
+		icon = GFX_goal_unknown
+		x = 24
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Night of the Long Knives
+	focus = {
+		id = GER_night_of_the_long_knives
+		icon = GFX_goal_generic_major_war
+		x = 24
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_beer_hall_putsch }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = rosenbergreich.1
+}
+		}
+	}
+
+	#Focus for Carrier Project
+	focus = {
+		id = GER_carrier_project
+		icon = GFX_goal_unknown
+		x = 16
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_luftwaffe 
+		}
+		prerequisite = { 
+			focus = GER_kriegsmarine 
+		}
+		mutually_exclusive = { focus = GER_uboat_program }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cooperate with the Balts
+	focus = {
+		id = GER_cooperate_with_the_balts
+		icon = GFX_goal_rhineland
+		x = 24
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_baltic_fleet 
+		}
+		prerequisite = { 
+			focus = GER_anti_bolshevist_pact 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_opinion_modifier= { 
+target = EST 
+modifier = large_increase 
+}
+add_opinion_modifier= { 
+target = LAT 
+modifier = large_increase 
+}
+add_opinion_modifier= { 
+target = LIT 
+modifier = large_increase 
+}
+		}
+	}
+
+	#Focus for Cooperate with the Swedes
+	focus = {
+		id = GER_cooperate_with_the_swedes
+		icon = GFX_goal_unknown
+		x = 23
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_cooperate_with_the_balts }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fund Der Block
+	focus = {
+		id = GER_fund_der_block
+		icon = GFX_goal_unknown
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_kick_out_the_opposition }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Befriend the English
+	focus = {
+		id = GER_befriend_the_english
+		icon = GFX_focus_chi_british_cooperation
+		x = 31
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_return_to_the_rhine }
+		mutually_exclusive = { focus = GER_befriend_the_italians }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_opinion_modifier= { 
+target = ENG 
+modifier = large_increase 
+}
+		}
+	}
+
+	#Focus for Sudetenland Question
+	focus = {
+		id = GER_sudetenland_question
+		icon = GFX_focus_generic_concessions
+		x = 34
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_austrian_question }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = rosenbergreich.10 
+}
+		}
+	}
+
+	#Focus for Bulgarian Appeasement
+	focus = {
+		id = GER_bulgarian_appeasement
+		icon = GFX_goal_generic_national_unity
+		x = 34
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_sudetenland_question }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = rosenbergreich.13 
+}
+		}
+	}
+
+	#Focus for Friends with Sanjurjo
+	focus = {
+		id = GER_friends_with_sanjurjo
+		icon = GFX_goal_unknown
+		x = 28
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_anti_bolshevist_pact }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

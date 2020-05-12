@@ -1,0 +1,39 @@
+spriteTypes = { 
+	##Icon For: Purge of Himmler
+	SpriteType = { 
+		name = "purge_of_himmler-8146"
+		texturefile = "gfx/interface/event_gfx/purge_of_himmler-8146.dds"
+	}
+
+	##Icon For: Purge of Goebbels.
+	SpriteType = { 
+		name = "purge_of_goebbels-8147"
+		texturefile = "gfx/interface/event_gfx/purge_of_goebbels-8147.dds"
+	}
+
+	##Icon For: Purge of Goring
+	SpriteType = { 
+		name = "purge_of_goring-8151"
+		texturefile = "gfx/interface/event_gfx/purge_of_goring-8151.dds"
+	}
+
+	##Icon For: Purge of the Strasser Brothers
+	SpriteType = { 
+		name = "purge_of_the_strasser_brothers-8152"
+		texturefile = "gfx/interface/event_gfx/purge_of_the_strasser_brothers-8152.dds"
+	}
+
+	##Icon For: Purge of Heydrich
+	SpriteType = { 
+		name = "purge_of_heydrich-8153"
+		texturefile = "gfx/interface/event_gfx/purge_of_heydrich-8153.dds"
+	}
+
+	##Icon For: Purge in the Military
+	SpriteType = { 
+		name = "purge_in_the_military-8154"
+		texturefile = "gfx/interface/event_gfx/purge_in_the_military-8154.dds"
+	}
+
+ 
+ }
