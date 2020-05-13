@@ -1615,8 +1615,6 @@ ideas = {
 		}
 		
 		gottfried_feder = {
-		
-			picture = GFX_idea_Gottfried_Feder
 
 			cost = 75
 			
@@ -1642,7 +1640,65 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+		}
+
+		ernst_thalmann = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
 		}	
+			
+		kurt_schumacher = {
+
+			
+			allowed = {
+				original_tag = GER
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+				if = {
+					limit = { has_dlc = "Waking the Tiger" }
+					has_completed_focus = GER_reestablish_free_elections
+				}
+			}
+			
+			traits = { democratic_reformer }
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
 		
 		hermann_esser = {
 
@@ -1731,7 +1787,7 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 		
-		sigfried_kasche = {
+		sigefried_kasche = {
 
 			
 			allowed = {
@@ -1762,6 +1818,101 @@ ideas = {
 			traits = { smooth_talking_charmer }
 		}
 
+		GER_hans_oster = {
+
+			
+			allowed = {
+				original_tag = GER
+				has_dlc = "Waking the Tiger"
+			}
+
+			available = {
+				has_completed_focus = GER_oppose_hitler
+			}
+			
+			traits = { anti_fascist_agent }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		GER_alfred_hugenberg = {
+
+			
+			allowed = {
+				original_tag = GER
+				has_dlc = "Waking the Tiger"
+			}
+
+			available = {
+				has_completed_focus = GER_revive_the_kaiserreich
+			}
+			
+			traits = { monarchist_media_mogul }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		GER_carl_friedrich_goerdeler = {
+
+			
+			allowed = {
+				original_tag = GER
+				has_dlc = "Waking the Tiger"
+			}
+
+			available = {
+				has_completed_focus = GER_revive_the_kaiserreich
+			}
+			
+			traits = { economist }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		GER_julius_leber = {
+
+			
+			allowed = {
+				original_tag = GER
+				has_dlc = "Waking the Tiger"
+			}
+
+			available = {
+				has_completed_focus = GER_reestablish_free_elections
+			}
+			
+			traits = { connected_citizen }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		GER_theodor_heuss = {
+
+			
+			allowed = {
+				original_tag = GER
+				has_dlc = "Waking the Tiger"
+			}
+
+			available = {
+				has_completed_focus = GER_reestablish_free_elections
+			}
+			
+			traits = { liberal_journalist }
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
 		ger_wilhelm_canaris = {
 		
 			available = {
@@ -2306,7 +2457,7 @@ ideas = {
 	
 	air_chief = {
 		
-		manfred_von_richtofen = {
+		goering = {
 
 			
 			allowed = {
@@ -2327,11 +2478,14 @@ ideas = {
 			}
 		}
 		
-		heinrich_kroll = {
+		ritter_von_greim = {
 
 			
 			allowed = {
 				original_tag = GER
+			}
+			available = {
+				has_completed_focus = GER_air_innovation
 			}
 						
 			traits = { air_chief_all_weather_2 }
@@ -2341,7 +2495,7 @@ ideas = {
 			}
 		}
 		
-		rudolf_berthold = {
+		albert_kesselring = {
 
 			
 			allowed = {
@@ -2358,7 +2512,7 @@ ideas = {
 	
 	navy_chief = { #CHIEF OF NAVY
 		
-		hermann_ehrhardt = {
+		raeder = {
 
 			
 			allowed = {
@@ -2372,7 +2526,7 @@ ideas = {
 			}
 		}
 		
-		wilhelm_meisel = {
+		donitz = {
 
 			
 			allowed = {
@@ -2449,7 +2603,7 @@ ideas = {
 			}
 		}
 		
-		werner_voss = {
+		hugo_sperrle = {
 			ledger = air
 
 			
@@ -2467,7 +2621,7 @@ ideas = {
 			}
 		}
 		
-		josef_veltjens = {
+		erhard_milch = {
 			ledger = air
 
 			
@@ -2482,7 +2636,7 @@ ideas = {
 			}
 		}
 		
-		eeduard_schleich = {
+		kurt_student = {
 			ledger = air
 
 			
@@ -2497,7 +2651,7 @@ ideas = {
 			}
 		}	
 		
-		 kurt_fricke = {
+		hermann_ehrhardt = {
 			ledger = navy
 
 			
@@ -2527,7 +2681,7 @@ ideas = {
 			}
 		}
 		 
-		alwin_broeder_albrecht = {
+		viktor_schutze = {
 			ledger = navy
 
 			

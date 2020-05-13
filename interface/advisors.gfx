@@ -14,4 +14,29 @@ spriteTypes = {
 		name = "GFX_idea_baldur_schirach"
 		texturefile = "gfx/interface/ideas/idea_baldur_schirach.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_idea_hermann_esser"
+		texturefile = "gfx/interface/ideas/idea_hermann_esser.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_siegfried_kasche"
+		texturefile = "gfx/interface/ideas/idea_siegfried_kasche.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_rudolf_diels"
+		texturefile = "gfx/interface/ideas/idea_rudolf_diels.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_eduard_stadtler"
+		texturefile = "gfx/interface/ideas/idea_eduard_stadtler.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_julius_schreck"
+		texturefile = "gfx/interface/ideas/idea_julius_schreck.dds"
+	}
 }
