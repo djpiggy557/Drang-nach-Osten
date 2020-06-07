@@ -39,4 +39,21 @@ spriteTypes = {
 		name = "GFX_idea_julius_schreck"
 		texturefile = "gfx/interface/ideas/idea_julius_schreck.dds"
 	}
+	
+	
+	SpriteType = {
+		name = "GFX_idea_wilhelm_bruckner"
+		texturefile = "gfx/interface/ideas/idea_wilhelm_bruckner.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_franz_pfeffer_von_salomon"
+		texturefile = "gfx/interface/ideas/idea_franz_pfeffer_von_salomon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_werner_von_blomberg"
+		texturefile = "gfx/interface/ideas/idea_werner_von_blomberg.dds"
+	}
+	
 }
