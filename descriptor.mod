@@ -1,4 +1,4 @@
-version="1.9.2"
+version="1.9.3"
 tags={
 	"Map"
 	"Military"
@@ -10,4 +10,4 @@ tags={
 	"Alternative History"
 }
 name="Drang nach Osten"
-supported_version="1.9.2"
+supported_version="1.9.3"

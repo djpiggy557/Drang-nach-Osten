@@ -172,10 +172,17 @@ country_event = {
 	option = {
 		name = rosenbergreich.7.a
 		ai_chance = { factor = 1}
+		add_stability= -0.10
+add_war_support= 15
 	}
 	option = {
 		name = rosenbergreich.7.b
-		ai_chance = { factor = 1}
+		ai_chance = { factor = 15}
+		add_popularity= { 
+ideology = fascism 
+ popularity = -0.15 
+}
+add_stability= 0.05
 	}
 }
 ##Event: Anti Bolshevik Pact
@@ -190,10 +197,6 @@ country_event = {
 		name = rosenbergreich.8.a
 		ai_chance = { factor = 10}
 		GER = {give_guarantee = ROOT }
-	}
-	option = {
-		name = rosenbergreich.8.b
-		ai_chance = { factor = 1}
 	}
 }
 ##Event: Austrian Question
@@ -220,6 +223,11 @@ country_event = {
 	option = {
 		name = rosenbergreich.9.c
 		ai_chance = { factor = 1}
+		GER = {create_wargoal= { 
+type = annex_everything 
+target = AUS
+}
+}
 	}
 }
 ##Event: Sudetenland Question
@@ -272,6 +280,20 @@ country_event = {
 		ai_chance = { factor = 20}
 		GER = {set_state_owner= 69 set_state_owner= 74}
 	}
+	option = {
+		name = rosenbergreich.11.b
+		ai_chance = { factor = 1}
+		GER = {create_wargoal= { 
+type = annex_everything 
+target = CZE
+}
+}
+	}
+	option = {
+		name = rosenbergreich.11.c
+		ai_chance = { factor = 1}
+		give_guarantee= CZE
+	}
 }
 ##Event: Hungarian Appeasement
 country_event = {
@@ -290,13 +312,14 @@ country_event = {
 		name = rosenbergreich.12.b
 		ai_chance = { factor = 10}
 		HUN = {set_state_owner= 73 set_state_owner= 70 set_state_owner= 71 set_state_owner= 664}
+add_to_faction = HUN
 	}
 	option = {
 		name = rosenbergreich.12.c
 		ai_chance = { factor = 1}
-		POL = {set_state_owner= 72}
-HUN = {set_state_owner= 73 set_state_owner= 664}
-SLO = {set_state_owner= 70 set_state_owner= 71}
+		POL = {transfer_state = 72}
+HUN = {transfer_state = 73 transfer_state = 664}
+SLO = {transfer_state = 70 transfer_state = 71}
 puppet= SLO puppet= CZE
 	}
 	option = {
@@ -359,7 +382,7 @@ country_event = {
 	option = {
 		name = rosenbergreich.15.a
 		ai_chance = { factor = 50}
-		LAT = {set_state_owner= 96 add_popularity= { 
+		LIT = {set_state_owner= 784 add_popularity= { 
 ideology = fascism 
 popularity = 0.2 
 }
@@ -394,5 +417,198 @@ set_state_owner= 188 add_to_faction= LIT
 	option = {
 		name = rosenbergreich.15.d
 		ai_chance = { factor = 1}
+	}
+}
+##Event: Yugoslav Question
+country_event = {
+	id = rosenbergreich.16
+	title = rosenbergreich.16.title
+	desc = rosenbergreich.16.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = rosenbergreich.16.a
+		ai_chance = { factor = 100}
+		ITA = {country_event= {
+days = 1 
+id = rosenbergreich.17
+}
+}
+HUN = {country_event= {
+days = 1 
+id = rosenbergreich.18
+}
+}
+BUL = {country_event= {
+days = 1 
+id = rosenbergreich.19
+}
+}
+ROM = {country_event= {
+days = 1 
+id = rosenbergreich.20 
+}
+}
+SER = {set_state_owner= 107 set_state_owner= 108}
+CRO = {set_state_owner= 109 set_state_owner= 104 set_state_owner= 798}
+MNT = {set_state_owner= 105}
+puppet= MNT puppet= CRO puppet= SER set_state_owner= 102
+	}
+}
+##Event: Yugoslav Land for German Alliance
+country_event = {
+	id = rosenbergreich.17
+	title = rosenbergreich.17.title
+	desc = rosenbergreich.17.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = rosenbergreich.17.a
+		ai_chance = { factor = 100}
+		GER = {add_to_faction= ITA}
+transfer_state = 797 transfer_state = 103 transfer_state = 800
+	}
+	option = {
+		name = rosenbergreich.17.b
+		ai_chance = { factor = 1}
+		GER = {set_state_owner= 797}
+CRO = {set_state_owner= 103}
+SER = {set_state_owner = 800}
+	}
+}
+##Event: Yugoslav Land for German Alliance
+country_event = {
+	id = rosenbergreich.18
+	title = rosenbergreich.18.title
+	desc = rosenbergreich.18.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = rosenbergreich.18.a
+		ai_chance = { factor = 100}
+		GER = {add_to_faction= HUN}
+transfer_state = 45 transfer_state = 799
+	}
+	option = {
+		name = rosenbergreich.18.b
+		ai_chance = { factor = 1}
+		GER = {set_state_owner= 799}
+CRO = {set_state_owner= 45}
+	}
+}
+##Event: Yugoslav Land for German Alliance
+country_event = {
+	id = rosenbergreich.19
+	title = rosenbergreich.19.title
+	desc = rosenbergreich.19.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 15
+	}
+	option = {
+		name = rosenbergreich.19.a
+		ai_chance = { factor = 100}
+		GER = {add_to_faction= BUL}
+set_state_owner= 106
+	}
+	option = {
+		name = rosenbergreich.19.b
+		ai_chance = { factor = 1}
+		SER = {set_state_owner= 106}
+	}
+}
+##Event: Yugoslav Land for German Alliance
+country_event = {
+	id = rosenbergreich.20
+	title = rosenbergreich.20.title
+	desc = rosenbergreich.20.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = {
+		name = rosenbergreich.20.a
+		ai_chance = { factor = 100}
+		GER = {add_to_faction= ROM}
+set_state_owner= 764
+	}
+	option = {
+		name = rosenbergreich.20.b
+		ai_chance = { factor = 1}
+		SER = {set_state_owner= 764}
+	}
+}
+##Event: Beer Hall Putsch
+country_event = {
+	id = rosenbergreich.21
+	title = rosenbergreich.21.title
+	desc = rosenbergreich.21.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = rosenbergreich.21.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = rosenbergreich.21.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: The Germans Offer Cooperation
+country_event = {
+	id = rosenbergreich.22
+	title = rosenbergreich.22.title
+	desc = rosenbergreich.22.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = rosenbergreich.22.a
+		ai_chance = { factor = 100}
+		give_guarantee= GER
+GER = {give_guarantee= FIN}
+	}
+}
+##Event: Germany Asks for a Pact
+country_event = {
+	id = rosenbergreich.23
+	title = rosenbergreich.23.title
+	desc = rosenbergreich.23.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = rosenbergreich.23.a
+		ai_chance = { factor = 10}
+		give_guarantee= GER
+GER = {give_guarantee= SWE}
+	}
+}
+##Event: Anti Soviet Alliance
+country_event = {
+	id = rosenbergreich.24
+	title = rosenbergreich.24.title
+	desc = rosenbergreich.24.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = rosenbergreich.24.a
+		ai_chance = { factor = 100}
+		GER = {add_to_faction= ROOT}
 	}
 }

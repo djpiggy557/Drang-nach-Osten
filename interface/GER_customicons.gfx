@@ -1,0 +1,193 @@
+spriteTypes = { 
+	##Icon For: Beer Hall Putsch
+	SpriteType = { 
+		name = "GFX_GER_beer_hall_putsch-16952"
+		texturefile = "gfx/interface/goals/GFX_GER_beer_hall_putsch-16952.dds"
+	}
+
+	##Icon Shine For: Beer Hall Putsch
+	SpriteType = { 
+		name = "GFX_GER_beer_hall_putsch-16952_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_beer_hall_putsch-16952.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_beer_hall_putsch-16952.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_beer_hall_putsch-16952.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Trade the Cross for the Swastika
+	SpriteType = { 
+		name = "GFX_GER_trade_the_cross_for_the_swastika-16808"
+		texturefile = "gfx/interface/goals/GFX_GER_trade_the_cross_for_the_swastika-16808.dds"
+	}
+
+	##Icon Shine For: Trade the Cross for the Swastika
+	SpriteType = { 
+		name = "GFX_GER_trade_the_cross_for_the_swastika-16808_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_trade_the_cross_for_the_swastika-16808.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_trade_the_cross_for_the_swastika-16808.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_trade_the_cross_for_the_swastika-16808.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Positive Christianity
+	SpriteType = { 
+		name = "GFX_GER_positive_christianity-16807"
+		texturefile = "gfx/interface/goals/GFX_GER_positive_christianity-16807.dds"
+	}
+
+	##Icon Shine For: Positive Christianity
+	SpriteType = { 
+		name = "GFX_GER_positive_christianity-16807_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_positive_christianity-16807.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_positive_christianity-16807.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_positive_christianity-16807.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Purge the Negative Protestantism
+	SpriteType = { 
+		name = "GFX_GER_purge_the_negative_protestantism-16811"
+		texturefile = "gfx/interface/goals/GFX_GER_purge_the_negative_protestantism-16811.dds"
+	}
+
+	##Icon Shine For: Purge the Negative Protestantism
+	SpriteType = { 
+		name = "GFX_GER_purge_the_negative_protestantism-16811_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_purge_the_negative_protestantism-16811.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_purge_the_negative_protestantism-16811.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_purge_the_negative_protestantism-16811.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: The Dying Church of Rome
+	SpriteType = { 
+		name = "GFX_GER_the_dying_church_of_rome-16810"
+		texturefile = "gfx/interface/goals/GFX_GER_the_dying_church_of_rome-16810.dds"
+	}
+
+	##Icon Shine For: The Dying Church of Rome
+	SpriteType = { 
+		name = "GFX_GER_the_dying_church_of_rome-16810_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_the_dying_church_of_rome-16810.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_the_dying_church_of_rome-16810.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_the_dying_church_of_rome-16810.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+ 
+ }
