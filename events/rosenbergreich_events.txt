@@ -173,7 +173,7 @@ country_event = {
 		name = rosenbergreich.7.a
 		ai_chance = { factor = 1}
 		add_stability= -0.10
-add_war_support= 15
+add_war_support= 0.15
 	}
 	option = {
 		name = rosenbergreich.7.b
@@ -196,7 +196,11 @@ country_event = {
 	option = {
 		name = rosenbergreich.8.a
 		ai_chance = { factor = 10}
-		GER = {give_guarantee = ROOT }
+		ROOT = {add_opinion_modifier= { 
+target = GER
+modifier = huge_increase
+}
+}
 	}
 }
 ##Event: Austrian Question
@@ -209,7 +213,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = rosenbergreich.9.a
-		ai_chance = { factor = 10}
+		ai_chance = { factor = 100}
 		GER = {annex_country= {
  target = AUS 
 }
@@ -217,8 +221,8 @@ country_event = {
 	}
 	option = {
 		name = rosenbergreich.9.b
-		ai_chance = { factor = 5}
-		GER = {puppet= AUS}
+		ai_chance = { factor = 10}
+		GER = {puppet = AUS}
 	}
 	option = {
 		name = rosenbergreich.9.c
@@ -252,6 +256,7 @@ id = rosenbergreich.11
 		ai_chance = { factor = 10}
 		set_state_owner= 69
 set_state_owner= 74
+POL = {set_state_owner = 72}
 CZE = {add_popularity= { 
 ideology = communism 
 popularity = 0.6 
@@ -279,6 +284,8 @@ country_event = {
 		name = rosenbergreich.11.a
 		ai_chance = { factor = 20}
 		GER = {set_state_owner= 69 set_state_owner= 74}
+
+POL = {set_state_owner = 72}
 	}
 	option = {
 		name = rosenbergreich.11.b
@@ -303,6 +310,9 @@ country_event = {
 	picture = GFX_event_test
 	is_triggered_only = yes
 	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 10
+	}
 	option = {
 		name = rosenbergreich.12.a
 		ai_chance = { factor = 20}
@@ -313,12 +323,13 @@ country_event = {
 		ai_chance = { factor = 10}
 		HUN = {set_state_owner= 73 set_state_owner= 70 set_state_owner= 71 set_state_owner= 664}
 add_to_faction = HUN
+
+set_state_owner= 9 set_state_owner= 75
 	}
 	option = {
 		name = rosenbergreich.12.c
 		ai_chance = { factor = 1}
-		POL = {transfer_state = 72}
-HUN = {transfer_state = 73 transfer_state = 664}
+		HUN = {transfer_state = 73 transfer_state = 664}
 SLO = {transfer_state = 70 transfer_state = 71}
 puppet= SLO puppet= CZE
 	}
@@ -326,8 +337,10 @@ puppet= SLO puppet= CZE
 		name = rosenbergreich.12.d
 		ai_chance = { factor = 1}
 		HUN = {set_state_owner= 73 set_state_owner= 71 set_state_owner= 70 set_state_owner= 664}
-POL = {set_state_owner= 72}
+
 set_state_owner= 9 set_state_owner= 75
+
+add_to_faction = HUN
 	}
 }
 ##Event: Bulgarian Appeasement
@@ -610,5 +623,33 @@ country_event = {
 		name = rosenbergreich.24.a
 		ai_chance = { factor = 100}
 		GER = {add_to_faction= ROOT}
+	}
+}
+##Event: Estonian-German Alliance Treaty
+country_event = {
+	id = rosenbergreich.25
+	title = rosenbergreich.25.title
+	desc = rosenbergreich.25.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = rosenbergreich.25.a
+		ai_chance = { factor = 100}
+		GER = {add_to_faction= EST}
+	}
+}
+##Event: Latvian-German Alliance Treaty
+country_event = {
+	id = rosenbergreich.26
+	title = rosenbergreich.26.title
+	desc = rosenbergreich.26.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = rosenbergreich.26.a
+		ai_chance = { factor = 100}
+		GER = {add_to_faction= LAT}
 	}
 }

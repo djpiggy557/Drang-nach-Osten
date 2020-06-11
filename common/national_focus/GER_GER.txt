@@ -10,13 +10,16 @@ focus_tree = {
 	#Focus for Return to the Rhine
 	focus = {
 		id = GER_return_to_the_rhine
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_GER_return_to_the_rhine-18249
 		x = 30
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_completed_focus= GER_fuhrer_rosenberg
 		}
 		completion_reward = {
 			51 = {set_demilitarized_zone= no}
@@ -27,7 +30,7 @@ focus_tree = {
 	#Focus for Naumburg's Heimatstil
 	focus = {
 		id = GER_naumburgs_heimatstil
-		icon = GFX_goal_generic_construct_infrastructure
+		icon = GFX_GER_naumburgs_heimatstil-18715
 		x = 16
 		y = 4
 		cost = 10
@@ -38,27 +41,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			50 = {
-add_building_construction = {type = infrastructurelevel = 5
-instant_build = yes}
-
-}
-
-52 = {
-add_building_construction = {type = infrastructurelevel = 5
-instant_build = yes}
-
-}
-
-53 = {
-add_building_construction = {type = infrastructurelevel = 5
-instant_build = yes}
-
-}
-
-54 = {
-add_building_construction = {type = infrastructurelevel = 5
-instant_build = yes}
-
+ add_extra_state_shared_building_slots = 10 
 }
 		}
 	}
@@ -338,7 +321,7 @@ modifier = large_increase
 	#Focus for Order a KdF Expansion
 	focus = {
 		id = GER_order_a_kdf_expansion
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_GER_order_a_kdf_expansion-18734
 		x = 18
 		y = 4
 		cost = 10
@@ -467,10 +450,10 @@ modifier = large_increase
 	#Focus for Kick out the Opposition
 	focus = {
 		id = GER_kick_out_the_opposition
-		icon = GFX_focus_eng_move_to_secure_the_dominions
+		icon = GFX_GER_kick_out_the_opposition-18717
 		x = 16
 		y = 3
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_25_point_plan }
 		ai_will_do = {
@@ -505,13 +488,16 @@ id = rosenbergreich.22
 	#Focus for 25 Point Plan
 	focus = {
 		id = GER_25_point_plan
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_GER_25_point_plan-18641
 		x = 16
 		y = 2
 		cost = 5
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_completed_focus= GER_fuhrer_rosenberg
 		}
 		completion_reward = {
 			add_political_power= 100
@@ -546,7 +532,7 @@ id = rosenbergreich.22
 			factor = 1
 		}
 		completion_reward = {
-			random_owned_controlled_state={
+			58 ={
  limit = {
  free_building_slots = {
  building = dockyard
@@ -565,7 +551,7 @@ id = rosenbergreich.22
 
  set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
  }
-random_owned_controlled_state={
+61 ={
  limit = {
  free_building_slots = {
  building = dockyard
@@ -584,7 +570,7 @@ random_owned_controlled_state={
 
  set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
  }
-random_owned_controlled_state={
+62 ={
  limit = {
  free_building_slots = {
  building = dockyard
@@ -683,12 +669,12 @@ random_owned_controlled_state={
 	#Focus for Ascension of the NSDAP
 	focus = {
 		id = GER_ascension_of_the_nsdap
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_GER_ascension_of_the_nsdap-18387
 		x = 24
-		y = 4
+		y = 3
 		cost = 1
 		available_if_capitulated = yes
-		prerequisite = { focus = GER_night_of_the_long_knives }
+		prerequisite = { focus = GER_beer_hall_putsch }
 		ai_will_do = {
 			factor = 1
 		}
@@ -703,12 +689,12 @@ id = rosenbergreich.7
 	#Focus for Fuhrer Rosenberg
 	focus = {
 		id = GER_fuhrer_rosenberg
-		icon = GFX_goal_support_fascism
+		icon = GFX_GER_fuhrer_rosenberg-18391
 		x = 24
 		y = 5
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
-		prerequisite = { focus = GER_ascension_of_the_nsdap }
+		prerequisite = { focus = GER_night_of_the_long_knives }
 		ai_will_do = {
 			factor = 1
 		}
@@ -736,12 +722,12 @@ id = rosenbergreich.21
 	#Focus for Night of the Long Knives
 	focus = {
 		id = GER_night_of_the_long_knives
-		icon = GFX_goal_generic_major_war
+		icon = GFX_GER_night_of_the_long_knives-18248
 		x = 24
-		y = 3
+		y = 4
 		cost = 1
 		available_if_capitulated = yes
-		prerequisite = { focus = GER_beer_hall_putsch }
+		prerequisite = { focus = GER_ascension_of_the_nsdap }
 		ai_will_do = {
 			factor = 1
 		}
@@ -791,17 +777,20 @@ id = rosenbergreich.1
 			factor = 1
 		}
 		completion_reward = {
-			add_opinion_modifier= { 
-target = EST 
-modifier = large_increase 
+			EST = {add_opinion_modifier= { 
+target = GER
+modifier = huge_increase 
 }
-add_opinion_modifier= { 
-target = LAT 
-modifier = large_increase 
 }
-add_opinion_modifier= { 
-target = LIT 
-modifier = large_increase 
+LAT = {add_opinion_modifier= { 
+target = GER
+modifier = huge_increase 
+}
+}
+LIT = {add_opinion_modifier= { 
+target = GER 
+modifier = huge_increase 
+}
 }
 		}
 	}
@@ -830,7 +819,7 @@ id = rosenbergreich.23
 	#Focus for Reroute Der Block
 	focus = {
 		id = GER_reroute_der_block
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_GER_reroute_der_block-18718
 		x = 14
 		y = 4
 		cost = 10
@@ -998,6 +987,10 @@ id = rosenbergreich.13
 		available = {
 			SPR = {has_civil_war= yes}
 		}
+		completion_reward = {
+			SPR = {give_guarantee= GER}
+give_guarantee= SPR
+		}
 	}
 
 	#Focus for Trade the Cross for the Swastika
@@ -1024,6 +1017,9 @@ id = rosenbergreich.13
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_completed_focus= GER_night_of_the_long_knives
 		}
 	}
 
@@ -1071,6 +1067,32 @@ id = rosenbergreich.13
 			create_wargoal= { 
 type = annex_everything 
 target = SOV
+}
+		}
+	}
+
+	#Focus for North Baltic Alliance
+	focus = {
+		id = GER_north_baltic_alliance
+		icon = GFX_goal_generic_trade
+		x = 25
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_cooperate_with_the_finns }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			EST = {country_event= {
+days = 1 
+id = rosenbergreich.25
+}
+}
+LAT = {country_event= {
+days = 1 
+id = rosenbergreich.26
+}
 }
 		}
 	}
