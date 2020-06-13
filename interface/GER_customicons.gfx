@@ -75,6 +75,44 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	##Icon For: Austrian Question
+	SpriteType = { 
+		name = "GFX_GER_austrian_question-18760"
+		texturefile = "gfx/interface/goals/GFX_GER_austrian_question-18760.dds"
+	}
+
+	##Icon Shine For: Austrian Question
+	SpriteType = { 
+		name = "GFX_GER_austrian_question-18760_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_austrian_question-18760.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_austrian_question-18760.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_austrian_question-18760.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 	##Icon For: Order a KdF Expansion
 	SpriteType = { 
 		name = "GFX_GER_order_a_kdf_expansion-18734"

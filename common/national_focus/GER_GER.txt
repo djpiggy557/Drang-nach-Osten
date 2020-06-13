@@ -279,7 +279,7 @@ id = rosenbergreich.8
 	#Focus for Austrian Question
 	focus = {
 		id = GER_austrian_question
-		icon = GFX_focus_generic_diplomatic_treaty
+		icon = GFX_GER_austrian_question-18760
 		x = 34
 		y = 6
 		cost = 10
