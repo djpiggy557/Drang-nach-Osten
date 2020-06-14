@@ -254,9 +254,9 @@ id = rosenbergreich.11
 	option = {
 		name = rosenbergreich.10.b
 		ai_chance = { factor = 10}
-		set_state_owner= 69
-set_state_owner= 74
-POL = {set_state_owner = 72}
+		transfer_state = 69
+transfer_state = 74
+POL = {transfer_state = 72}
 CZE = {add_popularity= { 
 ideology = communism 
 popularity = 0.6 
@@ -283,9 +283,9 @@ country_event = {
 	option = {
 		name = rosenbergreich.11.a
 		ai_chance = { factor = 20}
-		GER = {set_state_owner= 69 set_state_owner= 74}
+		GER = {transfer_state= 69 transfer_state= 74}
 
-POL = {set_state_owner = 72}
+POL = {transfer_state = 72}
 	}
 	option = {
 		name = rosenbergreich.11.b
@@ -316,15 +316,15 @@ country_event = {
 	option = {
 		name = rosenbergreich.12.a
 		ai_chance = { factor = 20}
-		HUN = {set_state_owner= 664 set_state_owner= 73}
+		HUN = {transfer_state= 664 transfer_state= 73}
 	}
 	option = {
 		name = rosenbergreich.12.b
 		ai_chance = { factor = 10}
-		HUN = {set_state_owner= 73 set_state_owner= 70 set_state_owner= 71 set_state_owner= 664}
+		HUN = {transfer_state= 73 transfer_state= 70 transfer_state= 71 transfer_state= 664}
 add_to_faction = HUN
 
-set_state_owner= 9 set_state_owner= 75
+transfer_state= 9 transfer_state= 75
 	}
 	option = {
 		name = rosenbergreich.12.c
@@ -336,9 +336,9 @@ puppet= SLO puppet= CZE
 	option = {
 		name = rosenbergreich.12.d
 		ai_chance = { factor = 1}
-		HUN = {set_state_owner= 73 set_state_owner= 71 set_state_owner= 70 set_state_owner= 664}
+		HUN = {transfer_state= 73 transfer_state= 71 transfer_state= 70 transfer_state= 664}
 
-set_state_owner= 9 set_state_owner= 75
+transfer_state= 9 transfer_state= 75
 
 add_to_faction = HUN
 	}
@@ -354,7 +354,7 @@ country_event = {
 	option = {
 		name = rosenbergreich.13.a
 		ai_chance = { factor = 10}
-		BUL = {set_state_owner= 77}
+		BUL = {transfer_state= 77}
 	}
 	option = {
 		name = rosenbergreich.13.b
@@ -395,7 +395,7 @@ country_event = {
 	option = {
 		name = rosenbergreich.15.a
 		ai_chance = { factor = 50}
-		LIT = {set_state_owner= 784 add_popularity= { 
+		LIT = {transfer_state= 784 add_popularity= { 
 ideology = fascism 
 popularity = 0.2 
 }
@@ -405,7 +405,7 @@ ideology = fascism
 popularity = 0.5 
 }
 }
-add_to_faction= LIT add_to_faction= POL set_state_owner= 85 set_state_owner= 86 set_state_owner= 188 set_state_owner= 762
+add_to_faction= LIT add_to_faction= POL transfer_state= 85 transfer_state= 86 transfer_state= 188 transfer_state= 762
 	}
 	option = {
 		name = rosenbergreich.15.b
@@ -415,7 +415,7 @@ ideology = fascism
 popularity = 0.7 
 }
 }
-add_to_faction= POL set_state_owner= 86 set_state_owner= 85 set_state_owner= 762
+add_to_faction= POL transfer_state= 86 transfer_state= 85 transfer_state= 762
 	}
 	option = {
 		name = rosenbergreich.15.c
@@ -425,7 +425,7 @@ ideology = fascism
 popularity = 0.5 
 }
 }
-set_state_owner= 188 add_to_faction= LIT
+transfer_state= 188 add_to_faction= LIT
 	}
 	option = {
 		name = rosenbergreich.15.d
@@ -463,10 +463,10 @@ days = 1
 id = rosenbergreich.20 
 }
 }
-SER = {set_state_owner= 107 set_state_owner= 108}
-CRO = {set_state_owner= 109 set_state_owner= 104 set_state_owner= 798}
-MNT = {set_state_owner= 105}
-puppet= MNT puppet= CRO puppet= SER set_state_owner= 102
+SER = {transfer_state= 107 transfer_state= 108}
+CRO = {transfer_state= 109 transfer_state= 104 transfer_state= 798}
+MNT = {transfer_state= 105}
+puppet= MNT puppet= CRO puppet= SER transfer_state= 102
 	}
 }
 ##Event: Yugoslav Land for German Alliance
@@ -489,9 +489,9 @@ transfer_state = 797 transfer_state = 103 transfer_state = 800
 	option = {
 		name = rosenbergreich.17.b
 		ai_chance = { factor = 1}
-		GER = {set_state_owner= 797}
-CRO = {set_state_owner= 103}
-SER = {set_state_owner = 800}
+		GER = {transfer_state= 797}
+CRO = {transfer_state= 103}
+SER = {transfer_state = 800}
 	}
 }
 ##Event: Yugoslav Land for German Alliance
@@ -514,8 +514,8 @@ transfer_state = 45 transfer_state = 799
 	option = {
 		name = rosenbergreich.18.b
 		ai_chance = { factor = 1}
-		GER = {set_state_owner= 799}
-CRO = {set_state_owner= 45}
+		GER = {transfer_state= 799}
+CRO = {transfer_state= 45}
 	}
 }
 ##Event: Yugoslav Land for German Alliance
@@ -533,12 +533,12 @@ country_event = {
 		name = rosenbergreich.19.a
 		ai_chance = { factor = 100}
 		GER = {add_to_faction= BUL}
-set_state_owner= 106
+transfer_state= 106
 	}
 	option = {
 		name = rosenbergreich.19.b
 		ai_chance = { factor = 1}
-		SER = {set_state_owner= 106}
+		SER = {transfer_state= 106}
 	}
 }
 ##Event: Yugoslav Land for German Alliance
@@ -556,12 +556,12 @@ country_event = {
 		name = rosenbergreich.20.a
 		ai_chance = { factor = 100}
 		GER = {add_to_faction= ROM}
-set_state_owner= 764
+transfer_state= 764
 	}
 	option = {
 		name = rosenbergreich.20.b
 		ai_chance = { factor = 1}
-		SER = {set_state_owner= 764}
+		SER = {transfer_state= 764}
 	}
 }
 ##Event: Beer Hall Putsch

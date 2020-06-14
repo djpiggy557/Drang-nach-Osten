@@ -332,13 +332,14 @@ modifier = large_increase
 		}
 		completion_reward = {
 			60 ={
+ if = {
  limit = {
  free_building_slots = {
  building = industrial_complex
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1
@@ -352,13 +353,14 @@ modifier = large_increase
  }
 
 65 ={
+ if = {
  limit = {
  free_building_slots = {
  building = industrial_complex
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1
@@ -372,13 +374,14 @@ modifier = large_increase
  }
 
 64 ={
+ if = {
  limit = {
  free_building_slots = {
  building = industrial_complex
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1
@@ -392,13 +395,14 @@ modifier = large_increase
  }
 
 61 ={
+ if = {
  limit = {
  free_building_slots = {
  building = industrial_complex
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1
@@ -412,13 +416,14 @@ modifier = large_increase
  }
 
 58 ={
+ if = {
  limit = {
  free_building_slots = {
  building = industrial_complex
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1
@@ -533,13 +538,14 @@ id = rosenbergreich.22
 		}
 		completion_reward = {
 			58 ={
+ if = {
  limit = {
  free_building_slots = {
  building = dockyard
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1
@@ -552,13 +558,14 @@ id = rosenbergreich.22
  set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
  }
 61 ={
+ if = {
  limit = {
  free_building_slots = {
  building = dockyard
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1
@@ -571,13 +578,14 @@ id = rosenbergreich.22
  set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
  }
 62 ={
+ if = {
  limit = {
  free_building_slots = {
  building = dockyard
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1
@@ -830,13 +838,14 @@ id = rosenbergreich.23
 		}
 		completion_reward = {
 			56 ={
+ if = {
  limit = {
  free_building_slots = {
  building = arms_factory
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1
@@ -850,13 +859,14 @@ id = rosenbergreich.23
  }
 
 59 ={
+ if = {
  limit = {
  free_building_slots = {
  building = arms_factory
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1
@@ -870,13 +880,14 @@ id = rosenbergreich.23
  }
 
 57 ={
+ if = {
  limit = {
  free_building_slots = {
  building = arms_factory
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1
@@ -890,13 +901,14 @@ id = rosenbergreich.23
  }
 
 55 ={
+ if = {
  limit = {
  free_building_slots = {
  building = arms_factory
  size > 0
  include_locked = yes
  }
-
+ }
  }
 
  add_extra_state_shared_building_slots = 1

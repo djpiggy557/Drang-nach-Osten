@@ -122,10 +122,6 @@ create_import = {
 	add_ideas = {
 		henschel
 		ig_faben
-		heinrich_himmler
-		rudolf_hess
-		ludwig_beck
-		gerd_von_rundstedt
 		GER_autarky_idea
 
 		#laws
