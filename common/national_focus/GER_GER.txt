@@ -145,7 +145,7 @@ id = rosenbergreich.24
 	#Focus for Romanian Appeasement
 	focus = {
 		id = GER_romanian_appeasement
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_GER_romanian_appeasement-19195
 		x = 36
 		y = 8
 		cost = 10
@@ -193,7 +193,7 @@ id = rosenbergreich.16
 	#Focus for Hungarian Appeasement
 	focus = {
 		id = GER_hungarian_appeasement
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_GER_hungarian_appeasement-19193
 		x = 32
 		y = 8
 		cost = 10
@@ -332,14 +332,13 @@ modifier = large_increase
 		}
 		completion_reward = {
 			60 ={
- if = {
  limit = {
  free_building_slots = {
  building = industrial_complex
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -353,14 +352,13 @@ modifier = large_increase
  }
 
 65 ={
- if = {
  limit = {
  free_building_slots = {
  building = industrial_complex
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -374,14 +372,13 @@ modifier = large_increase
  }
 
 64 ={
- if = {
  limit = {
  free_building_slots = {
  building = industrial_complex
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -395,14 +392,13 @@ modifier = large_increase
  }
 
 61 ={
- if = {
  limit = {
  free_building_slots = {
  building = industrial_complex
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -416,14 +412,13 @@ modifier = large_increase
  }
 
 58 ={
- if = {
  limit = {
  free_building_slots = {
  building = industrial_complex
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -522,6 +517,15 @@ id = rosenbergreich.22
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+                name = submarine_bonus
+                bonus = 1.0
+                uses = 2
+   technology = basic_ship_hull_submarine
+   technology = improved_ship_hull_submarine
+   }
+		}
 	}
 
 	#Focus for Baltic Fleet
@@ -538,14 +542,13 @@ id = rosenbergreich.22
 		}
 		completion_reward = {
 			58 ={
- if = {
  limit = {
  free_building_slots = {
  building = dockyard
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -558,14 +561,13 @@ id = rosenbergreich.22
  set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
  }
 61 ={
- if = {
  limit = {
  free_building_slots = {
  building = dockyard
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -578,14 +580,13 @@ id = rosenbergreich.22
  set_state_flag = REPLACE_ME_WITH_UNIQUE_IDENTIFIER
  }
 62 ={
- if = {
  limit = {
  free_building_slots = {
  building = dockyard
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -612,6 +613,20 @@ id = rosenbergreich.22
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+                name = fighter_bonus
+                bonus = 1.0
+                uses = 2
+                technology = early_fighter
+                technology = tactical_bomber1
+                technology = tactical_bomber2
+                technology = tactical_bomber3
+               technology = strategic_bomber1
+               technology = strategic_bomber2
+               technology = strategic_bomber3
+            }
+		}
 	}
 
 	#Focus for German Dogfighters
@@ -626,6 +641,20 @@ id = rosenbergreich.22
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+                name = fighter_bonus
+                bonus = 1.0
+                uses = 2
+                technology = early_fighter
+                technology = fighter1
+                technology = fighter2
+                technology = fighter3
+                technology = heavy_fighter1
+                technology = heavy_fighter2
+                technology = heavy_fighter3
+            }
+		}
 	}
 
 	#Focus for Air Innovations
@@ -639,6 +668,14 @@ id = rosenbergreich.22
 		prerequisite = { focus = GER_luftwaffe }
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                name =  air_doc_bonus
+                bonus = 0.5
+                uses = 2
+                category = air_doctrine
+            }
 		}
 	}
 
@@ -655,6 +692,20 @@ id = rosenbergreich.22
 		}
 		completion_reward = {
 			navy_experience = 15
+
+add_tech_bonus = {
+                name = trade_interdiction_bonus
+                bonus = 1.0
+                uses = 2
+                category = trade_interdiction_tree
+            }
+
+add_tech_bonus = {
+                name = fleet_in_being_bonus
+                bonus = 1.0
+                uses = 2
+                category = fleet_in_being_tree
+            }
 		}
 	}
 
@@ -671,6 +722,13 @@ id = rosenbergreich.22
 		}
 		completion_reward = {
 			air_experience= 15
+
+add_tech_bonus = {
+                name =  air_doc_bonus
+                bonus = 1.0
+                uses = 1
+                category = air_doctrine
+            }
 		}
 	}
 
@@ -765,12 +823,21 @@ id = rosenbergreich.1
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			add_tech_bonus = {
+                name = submarine_bonus
+                bonus = 1.0
+                uses = 1
+   technology = early_ship_hull_carrier
+   technology = basic_ship_hull_carrier
+   }
+		}
 	}
 
 	#Focus for Cooperate with the Balts
 	focus = {
 		id = GER_cooperate_with_the_balts
-		icon = GFX_goal_rhineland
+		icon = GFX_GER_cooperate_with_the_balts-19199
 		x = 24
 		y = 7
 		cost = 10
@@ -838,14 +905,13 @@ id = rosenbergreich.23
 		}
 		completion_reward = {
 			56 ={
- if = {
  limit = {
  free_building_slots = {
  building = arms_factory
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -859,14 +925,13 @@ id = rosenbergreich.23
  }
 
 59 ={
- if = {
  limit = {
  free_building_slots = {
  building = arms_factory
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -880,14 +945,13 @@ id = rosenbergreich.23
  }
 
 57 ={
- if = {
  limit = {
  free_building_slots = {
  building = arms_factory
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -901,14 +965,13 @@ id = rosenbergreich.23
  }
 
 55 ={
- if = {
  limit = {
  free_building_slots = {
  building = arms_factory
  size > 0
  include_locked = yes
  }
- }
+
  }
 
  add_extra_state_shared_building_slots = 1
@@ -947,7 +1010,7 @@ modifier = large_increase
 	#Focus for Sudetenland Question
 	focus = {
 		id = GER_sudetenland_question
-		icon = GFX_focus_generic_concessions
+		icon = GFX_GER_sudetenland_question-19192
 		x = 34
 		y = 7
 		cost = 10
@@ -967,7 +1030,7 @@ id = rosenbergreich.10
 	#Focus for Bulgarian Appeasement
 	focus = {
 		id = GER_bulgarian_appeasement
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_GER_bulgarian_appeasement-19194
 		x = 34
 		y = 8
 		cost = 10
@@ -987,7 +1050,7 @@ id = rosenbergreich.13
 	#Focus for Friends with Sanjurjo
 	focus = {
 		id = GER_friends_with_sanjurjo
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		icon = GFX_GER_friends_with_sanjurjo-19197
 		x = 28
 		y = 7
 		cost = 10

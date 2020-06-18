@@ -75,6 +75,82 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	##Icon For: Romanian Appeasement
+	SpriteType = { 
+		name = "GFX_GER_romanian_appeasement-19195"
+		texturefile = "gfx/interface/goals/GFX_GER_romanian_appeasement-19195.dds"
+	}
+
+	##Icon Shine For: Romanian Appeasement
+	SpriteType = { 
+		name = "GFX_GER_romanian_appeasement-19195_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_romanian_appeasement-19195.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_romanian_appeasement-19195.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_romanian_appeasement-19195.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Hungarian Appeasement
+	SpriteType = { 
+		name = "GFX_GER_hungarian_appeasement-19193"
+		texturefile = "gfx/interface/goals/GFX_GER_hungarian_appeasement-19193.dds"
+	}
+
+	##Icon Shine For: Hungarian Appeasement
+	SpriteType = { 
+		name = "GFX_GER_hungarian_appeasement-19193_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_hungarian_appeasement-19193.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_hungarian_appeasement-19193.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_hungarian_appeasement-19193.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 	##Icon For: Austrian Question
 	SpriteType = { 
 		name = "GFX_GER_austrian_question-18760"
@@ -379,6 +455,44 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	##Icon For: Cooperate with the Balts
+	SpriteType = { 
+		name = "GFX_GER_cooperate_with_the_balts-19199"
+		texturefile = "gfx/interface/goals/GFX_GER_cooperate_with_the_balts-19199.dds"
+	}
+
+	##Icon Shine For: Cooperate with the Balts
+	SpriteType = { 
+		name = "GFX_GER_cooperate_with_the_balts-19199_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_cooperate_with_the_balts-19199.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_cooperate_with_the_balts-19199.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_cooperate_with_the_balts-19199.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
 	##Icon For: Reroute Der Block
 	SpriteType = { 
 		name = "GFX_GER_reroute_der_block-18718"
@@ -404,6 +518,120 @@ spriteTypes = {
 		}
 		animation = {
 			animationmaskfile = "gfx/interface/goals/GFX_GER_reroute_der_block-18718.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Sudetenland Question
+	SpriteType = { 
+		name = "GFX_GER_sudetenland_question-19192"
+		texturefile = "gfx/interface/goals/GFX_GER_sudetenland_question-19192.dds"
+	}
+
+	##Icon Shine For: Sudetenland Question
+	SpriteType = { 
+		name = "GFX_GER_sudetenland_question-19192_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_sudetenland_question-19192.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_sudetenland_question-19192.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_sudetenland_question-19192.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Bulgarian Appeasement
+	SpriteType = { 
+		name = "GFX_GER_bulgarian_appeasement-19194"
+		texturefile = "gfx/interface/goals/GFX_GER_bulgarian_appeasement-19194.dds"
+	}
+
+	##Icon Shine For: Bulgarian Appeasement
+	SpriteType = { 
+		name = "GFX_GER_bulgarian_appeasement-19194_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_bulgarian_appeasement-19194.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_bulgarian_appeasement-19194.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_bulgarian_appeasement-19194.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	##Icon For: Friends with Sanjurjo
+	SpriteType = { 
+		name = "GFX_GER_friends_with_sanjurjo-19197"
+		texturefile = "gfx/interface/goals/GFX_GER_friends_with_sanjurjo-19197.dds"
+	}
+
+	##Icon Shine For: Friends with Sanjurjo
+	SpriteType = { 
+		name = "GFX_GER_friends_with_sanjurjo-19197_shine"
+		texturefile = "gfx/interface/goals/GFX_GER_friends_with_sanjurjo-19197.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_friends_with_sanjurjo-19197.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/GFX_GER_friends_with_sanjurjo-19197.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
