@@ -27,6 +27,44 @@ focus_tree = {
 		}
 	}
 
+	#Focus for Lessons from the first war
+	focus = {
+		id = GER_lessons_from_the_first_war
+		icon = GFX_goal_rhineland
+		x = 42
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_legacy_of_the_stormtroopers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience= 15
+		}
+	}
+
+	#Focus for Legacy of the Stormtroopers
+	focus = {
+		id = GER_legacy_of_the_stormtroopers
+		icon = GFX_GER_legacy_of_the_stormtroopers-20933
+		x = 45
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                name = troop_bonus
+                bonus = 1.0
+                uses = 2
+        technology = infantry_equipment
+            }
+		}
+	}
+
 	#Focus for Naumburg's Heimatstil
 	focus = {
 		id = GER_naumburgs_heimatstil
@@ -737,7 +775,7 @@ add_tech_bonus = {
 		id = GER_ascension_of_the_nsdap
 		icon = GFX_GER_ascension_of_the_nsdap-18387
 		x = 24
-		y = 3
+		y = 2
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_beer_hall_putsch }
@@ -757,7 +795,7 @@ id = rosenbergreich.7
 		id = GER_fuhrer_rosenberg
 		icon = GFX_GER_fuhrer_rosenberg-18391
 		x = 24
-		y = 5
+		y = 4
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_night_of_the_long_knives }
@@ -771,7 +809,7 @@ id = rosenbergreich.7
 		id = GER_beer_hall_putsch
 		icon = GFX_GER_beer_hall_putsch-16952
 		x = 24
-		y = 2
+		y = 1
 		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -790,7 +828,7 @@ id = rosenbergreich.21
 		id = GER_night_of_the_long_knives
 		icon = GFX_GER_night_of_the_long_knives-18248
 		x = 24
-		y = 4
+		y = 3
 		cost = 1
 		available_if_capitulated = yes
 		prerequisite = { focus = GER_ascension_of_the_nsdap }
@@ -1169,6 +1207,345 @@ days = 1
 id = rosenbergreich.26
 }
 }
+		}
+	}
+
+	#Focus for Infantry equipment
+	focus = {
+		id = GER_infantry_equipment
+		icon = GFX_goal_generic_small_arms
+		x = 45
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_superior_firepower 
+			focus = GER_grand_battleplan 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                name = troop_bonus
+                bonus = 0.2
+                uses = 1
+        technology = support_weapons
+            }
+		}
+	}
+
+	#Focus for Better Artillery
+	focus = {
+		id = GER_better_artillery
+		icon = GFX_goal_generic_occupy_start_war
+		x = 41
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_superior_firepower }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A reformed Wehrmacht
+	focus = {
+		id = GER_a_reformed_wehrmacht
+		icon = GFX_goal_generic_political_pressure
+		x = 45
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_better_artillery 
+			focus = GER_better_organisation_tactics 
+			focus = GER_infantry_equipment 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Grand Battleplan
+	focus = {
+		id = GER_grand_battleplan
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 50
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_lessons_from_the_first_war 
+		}
+		prerequisite = { 
+			focus = GER_convene_nco_staff 
+		}
+		mutually_exclusive = { focus = GER_superior_firepower }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                name =  fire_doc_bonus
+                bonus = 1.0
+                uses = 1
+            category = cat_grand_battleplan
+            }
+		}
+	}
+
+	#Focus for Convene NCO staff
+	focus = {
+		id = GER_convene_nco_staff
+		icon = GFX_goal_poland_goal
+		x = 48
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_legacy_of_the_stormtroopers }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			has_tech = interwar_artillery
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                name = arty_bonus
+                bonus = 0.2
+                uses = 1
+           technology = interwar_artillery
+}
+		}
+	}
+
+	#Focus for Superior Firepower
+	focus = {
+		id = GER_superior_firepower
+		icon = GFX_goal_generic_army_artillery2
+		x = 40
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_lessons_from_the_first_war 
+		}
+		prerequisite = { 
+			focus = GER_convene_nco_staff 
+		}
+		mutually_exclusive = { focus = GER_grand_battleplan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+                name =  fire_doc_bonus
+                bonus = 1.0
+                uses = 1
+            category = cat_superior_firepower
+            }
+		}
+	}
+
+	#Focus for Better organisation tactics
+	focus = {
+		id = GER_better_organisation_tactics
+		icon = GFX_goal_generic_radar
+		x = 49
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_grand_battleplan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Moskowein Administrative Zone
+	focus = {
+		id = GER_moskowein_administrative_zone
+		icon = GFX_goal_unknown
+		x = 22
+		y = 15
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_novgorod_military_republic 
+		}
+		prerequisite = { 
+			focus = GER_caucasian_republics 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Caucasian Republics
+	focus = {
+		id = GER_caucasian_republics
+		icon = GFX_goal_unknown
+		x = 24
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_ukranian_state 
+		}
+		prerequisite = { 
+			focus = GER_cossack_hosts 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Novgorod Military Republic
+	focus = {
+		id = GER_novgorod_military_republic
+		icon = GFX_goal_generic_small_arms
+		x = 20
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_central_rada 
+		}
+		prerequisite = { 
+			focus = GER_ukranian_state 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state= 263 controls_state= 208 controls_state= 209 controls_state= 210
+		}
+		completion_reward = {
+			NVG = {set_state_owner= 210 set_state_owner= 209 set_state_owner= 208 set_state_owner= 263 add_state_core= 244 add_state_core= 264 add_state_core= 351 add_state_core= 214}
+		}
+	}
+
+	#Focus for a
+	focus = {
+		id = GER_a
+		icon = GFX_goal_unknown
+		x = 65
+		y = 19
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Foreign Administration
+	focus = {
+		id = GER_foreign_administration
+		icon = GFX_goal_unknown
+		x = 22
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_tear_down_the_judeo_bolshevik_state }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ukranian State
+	focus = {
+		id = GER_ukranian_state
+		icon = GFX_goal_support_fascism
+		x = 22
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_foreign_administration }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state= 201 controls_state= 199 controls_state= 198 controls_state= 202 controls_state= 203 controls_state= 192 controls_state= 197
+		}
+		completion_reward = {
+			UKR = {set_state_owner= 201 set_state_owner= 199 set_state_owner= 198 set_state_owner= 202 set_state_owner= 203 set_state_owner= 192 set_state_owner= 197 add_state_core= 193 add_state_core= 225 add_state_core= 226 add_state_core= 259 add_state_core= 221 add_state_core= 196 add_state_core= 200 add_state_core= 227 add_state_core= 228}
+		}
+	}
+
+	#Focus for Central Rada
+	focus = {
+		id = GER_central_rada
+		icon = GFX_goal_generic_propaganda
+		x = 18
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_foreign_administration }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_state= 206 controls_state= 207 controls_state= 204 controls_state= 194 controls_state= 241
+		}
+		completion_reward = {
+			BLR = {set_state_owner= 207 set_state_owner= 206 set_state_owner= 204 set_state_owner= 241 set_state_owner= 194}
+puppet= BLR
+		}
+	}
+
+	#Focus for Cossack Hosts
+	focus = {
+		id = GER_cossack_hosts
+		icon = GFX_goal_unknown
+		x = 26
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_foreign_administration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Manpower Debate
+	focus = {
+		id = GER_the_manpower_debate
+		icon = GFX_goal_unknown
+		x = 40
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_tear_down_the_judeo_bolshevik_state }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Schrecks Friekorps
+	focus = {
+		id = GER_schrecks_friekorps
+		icon = GFX_goal_unknown
+		x = 37
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_manpower_debate }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Heidens Sturmstaffel
+	focus = {
+		id = GER_heidens_sturmstaffel
+		icon = GFX_goal_unknown
+		x = 43
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_manpower_debate }
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
